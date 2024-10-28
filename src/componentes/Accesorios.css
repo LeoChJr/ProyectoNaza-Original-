@@ -1,0 +1,35 @@
+.accesorios-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.accesorios-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.accesorio-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comprar-button,
+.canjear-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.comprar-button:hover,
+.canjear-button:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,175 @@
+/* Estilos generales del contenedor */
+.hc-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Título principal */
+.hc-title {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #3498db;
+}
+
+/* Estilos de las tarjetas de historial clínico */
+.hc-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.hc-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Título dentro de la tarjeta */
+.hc-card h3 {
+  color: #2c3e50;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 1.3rem;
+}
+
+/* Información dentro de la tarjeta */
+.hc-card p {
+  color: #34495e;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Botones de acciones dentro de la tarjeta */
+.hc-card-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hc-card-actions button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.hc-card-actions button:hover {
+  background-color: #2980b9;
+}
+
+/* Botón de eliminar con estilo de alerta */
+.hc-card-actions button:last-child {
+  background-color: #e74c3c;
+}
+
+.hc-card-actions button:last-child:hover {
+  background-color: #c0392b;
+}
+
+/* Resto del formulario y estilos responsivos */
+.hc-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.hc-form h3 {
+  color: #2c3e50;
+  margin: 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.hc-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.hc-form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+  font-weight: 500;
+}
+
+.hc-form-group input[type="text"],
+.hc-form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.hc-form-group input[type="text"]:hover,
+.hc-form-group textarea:hover {
+  border-color: #a0aec0;
+}
+
+.hc-form-group input[type="text"]:focus,
+.hc-form-group textarea:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.hc-submit-button {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.hc-submit-button:hover {
+  background-color: #2980b9;
+}
+
+.hc-submit-button:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.hc-loading {
+  text-align: center;
+  color: #718096;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .hc-container {
+    margin: 1rem;
+    padding: 0;
+  }
+
+  .hc-form {
+    padding: 1rem;
+  }
+
+  .hc-title {
+    font-size: 1.5rem;
+  }
+
+  .hc-form-group input[type="text"],
+  .hc-form-group textarea {
+    font-size: 0.9rem;
+  }
+}

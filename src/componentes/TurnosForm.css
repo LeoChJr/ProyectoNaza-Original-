@@ -1,0 +1,105 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    margin: 25px 0;
+    font-weight: 600;
+}
+
+/* Contenedor del formulario de turnos */
+.turnos-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+/* Especificando estilos solo para TurnosForm */
+.turnos-form {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 15px;
+    text-align: left;
+}
+
+.turnos-form .form-group {
+    margin-bottom: 20px;
+}
+
+.turnos-form .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    font-weight: 500;
+}
+
+.turnos-form .form-group input[type="text"],
+.turnos-form .form-group input[type="date"],
+.turnos-form .form-group input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.turnos-form .form-group input[type="text"]:focus,
+.turnos-form .form-group input[type="date"]:focus,
+.turnos-form .form-group input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.turnos-form input[type="number"]::-webkit-outer-spin-button,
+.turnos-form input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Botón de enviar */
+.turnos-form .submit-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.turnos-form .submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensaje de alerta */
+.turnos-form .alert {
+    margin: 15px 0;
+    color: #d9534f;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Título del formulario */
+.turnos-form .form-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
